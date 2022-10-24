@@ -38,6 +38,7 @@ dataLayer.push({
             <p>Trött på kaffet från affären? Vi löser det! <br>
                 Signar du upp på vår prenumeration får du hemskickat tre paket kaffe i månaden! <br> 
                  <b>Allt detta för endast 450 kr per månad!</b></p>
+                 
             <form action="action_page.php"
                 method="get" class="form">
                 <p>Fyll i detta korta formulär för att starta din prenumeration</p>
@@ -53,8 +54,15 @@ dataLayer.push({
                 <label for="adress">Adress: <br></label>
                 <input id="form" type="text" id="adress">
                 <br><br>
-                <input id="skicka" type="submit" value="Skicka">
 
+                <div id="my_form">
+                <button id="nextStep">Skicka</button>
+                </div>
+
+                <div id="thank_you" style="display: none;">
+                    <p>Tackar!</p>
+                    <button type="submit">Close</button>
+                  </div>
             </form>
             <br><br>
 
